@@ -15,7 +15,7 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/oconnordiarmuid/moviesapp-ci-2021.git
+git remote add origin https://github.com/keithbutler-wit/moviesapp-assignment01-2022.git
 git branch -M main
 git push -uf origin main
 ```
@@ -67,8 +67,21 @@ Within a particular ecosystem, there may be a common way of installing things, s
 ## Usage
 Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+To install the dependencies use the command:
+``` sh
+npm install
+```
+
+To start the development server run the following command from inside the project directory:
+``` sh
+npm start
+```
+
+To run the storybook of the project use:
+``` sh
+npm run storybook
+```
+
 
 ## Roadmap
 * [ ] UI - New Views/pages
