@@ -84,11 +84,11 @@ npm run storybook
 
 ## Roadmap
 * [ ] UI - New Views/pages
-  * [ ] Actors
+  * [x] Actors
   * [ ] Most Popular Movies
   * [ ] Tv Series
 * [ ] Routing
-  * [ ] One additional parameterized URL
+  * [ ] One additional parameterized URL (actor details)
 * [ ] Extensive data hyperlinking 
 * [ ] Data model - Full Caching Support
 * [ ] Routing - Basic authentication

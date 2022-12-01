@@ -6,6 +6,7 @@ import MoviePage from "./pages/movieDetailsPage";
 import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage";
 import MovieReviewPage from "./pages/movieReviewPage";
+import PopularMoviesPage from "./pages/popularMoviesPage";
 import PopularActorsPage from "./pages/popularActorsPage";
 import {Link} from 'react-router-dom';
 import SiteHeader from './components/siteHeader';
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/reviews/form" element={<AddMovieReviewPage/>} />
             <Route exact path="/movies/favourites" element={<FavouriteMoviesPage />} />
             <Route exact path="/movies/upcoming" element={<UpcomingMoviesPage />} />
+            <Route exact path="/movies/popular" element={<PopularMoviesPage/>} />
             <Route exact path="/actors/popular" element={<PopularActorsPage/>} />
             <Route path="/movies/:id" element={<MoviePage />} />
             <Route path="/reviews/:id" element={ <MovieReviewPage /> } />
