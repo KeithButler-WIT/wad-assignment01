@@ -82,7 +82,6 @@ To run the storybook of the project use:
 npm run storybook
 ```
 
-
 ## Roadmap
 * [ ] UI - New Views/pages
   * [ ] Actors
