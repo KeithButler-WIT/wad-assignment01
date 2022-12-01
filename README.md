@@ -85,7 +85,7 @@ npm run storybook
 ## Roadmap
 * [ ] UI - New Views/pages
   * [x] Actors
-  * [ ] Most Popular Movies
+  * [x] Most Popular Movies
   * [ ] Tv Series
 * [ ] Routing
   * [ ] One additional parameterized URL (actor details)
