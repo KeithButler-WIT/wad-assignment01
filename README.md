@@ -71,25 +71,25 @@ Use examples liberally, and show the expected output if you can. It's helpful to
 Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
 ## Roadmap
-* [] UI - New Views/pages
-  * [] Actors
-  * [] Most Popular Movies
-  * [] Tv Series
-* [] Routing
-  * [] One additional parameterized URL
-* [] Extensive data hyperlinking 
-* [] Data model - Full Caching Support
-* [] Routing - Basic authentication
-* [] Favourite Actors/Tv series
-* [] Extended Filtering and/or Sorting
-* [] Storybook support
-* [] Functionality
-  * [] Ordered Favourites
-  * [] Movie Playlists
-* [] Pagination
-* [] 3rd party authentication e.g. Firebase
-* [] Backend persistence - e.g. TMDB Lists, Firebase
-* [] Rich Feature Set
+* [ ] UI - New Views/pages
+  * [ ] Actors
+  * [ ] Most Popular Movies
+  * [ ] Tv Series
+* [ ] Routing
+  * [ ] One additional parameterized URL
+* [ ] Extensive data hyperlinking 
+* [ ] Data model - Full Caching Support
+* [ ] Routing - Basic authentication
+* [ ] Favourite Actors/Tv series
+* [ ] Extended Filtering and/or Sorting
+* [ ] Storybook support
+* [ ] Functionality
+  * [ ] Ordered Favourites
+  * [ ] Movie Playlists
+* [ ] Pagination
+* [ ] 3rd party authentication e.g. Firebase
+* [ ] Backend persistence - e.g. TMDB Lists, Firebase
+* [ ] Rich Feature Set
 
 ## License
 For open source projects, say how it is licensed.
