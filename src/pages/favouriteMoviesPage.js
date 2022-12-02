@@ -27,11 +27,14 @@ const FavouriteMoviesPage = () => {
   }
 
   const movies = favouriteMovieQueries.map((q) => {
-    q.data.genre_ids = q.data.genres.map(g => g.id)
+    q.data.genre_ids = q.data.genres.map(g => g.id);
     return q.data
   });
 
   const toDo = () => true;
+  // const sortedMovies = movies[Symbol.iterator] = function* () {
+  //     yield* [...this.entries()].sort((a, b) => a[1] - b[1]);
+  // }
 
   return (
     <PageTemplate
