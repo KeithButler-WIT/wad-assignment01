@@ -87,8 +87,8 @@ npm run storybook
   * [x] Actors
   * [x] Most Popular Movies
   * [x] Tv Series
-* [ ] Routing
-  * [ ] One additional parameterized URL (actor details)
+* [x] Routing
+  * [x] One additional parameterized URL (Tv Show details)
 * [ ] Extensive data hyperlinking 
 * [ ] Data model - Full Caching Support
 * [ ] Routing - Basic authentication
