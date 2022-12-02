@@ -95,7 +95,7 @@ npm run storybook
 * [ ] Favourite Actors/Tv series
 * [ ] Extended Filtering and/or Sorting
 * [ ] Storybook support
-    * [ ] Actors Page
+    * [x] Actors Page
     * [ ] Tv Shows Page
     * [ ] Tv Show Details
 * [ ] Functionality
