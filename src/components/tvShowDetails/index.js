@@ -48,15 +48,15 @@ const TvShowDetails = ({ show }) => {  // Don't miss this!
       </Paper>
       <Paper component="ul" sx={root}>
         <Chip icon={<AccessTimeIcon />} label={`${show.episode_run_time} min.`} />
-        <Chip
-          icon={<MonetizationIcon />}
-          label={`${show.revenue.toLocaleString()}`}
-        />
+        {/* <Chip */}
+        {/*   icon={<MonetizationIcon />} */}
+        {/*   label={`${show.revenue.toLocaleString()}`} */}
+        {/* /> */}
         <Chip
           icon={<StarRate />}
           label={`${show.vote_average} (${show.vote_count}`}
         />
-        <Chip label={`Released: ${show.release_date}`} />
+        <Chip label={`Released: ${show.first_air_date}`} />
       </Paper>
       <Paper
         component="ul"
@@ -71,22 +71,6 @@ const TvShowDetails = ({ show }) => {  // Don't miss this!
           </li>
         ))}
       </Paper>
-     {/* <Fab */}
-     {/*    color="secondary" */}
-     {/*    variant="extended" */}
-     {/*    onClick={() =>setDrawerOpen(true)} */}
-     {/*    sx={{ */}
-     {/*      position: 'fixed', */}
-     {/*      bottom: '1em', */}
-     {/*      right: '1em' */}
-     {/*    }} */}
-     {/*  > */}
-     {/*    <NavigationIcon /> */}
-     {/*    Reviews */}
-     {/*  </Fab> */}
-     {/*  <Drawer anchor="top" open={drawerOpen} onClose={() => setDrawerOpen(false)}> */}
-     {/*    <MovieReviews movie={show} /> */}
-     {/*  </Drawer> */}
     </>
   );
 };
