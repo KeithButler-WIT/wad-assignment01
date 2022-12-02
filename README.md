@@ -83,10 +83,10 @@ npm run storybook
 ```
 
 ## Roadmap
-* [ ] UI - New Views/pages
+* [x] UI - New Views/pages
   * [x] Actors
   * [x] Most Popular Movies
-  * [ ] Tv Series
+  * [x] Tv Series
 * [ ] Routing
   * [ ] One additional parameterized URL (actor details)
 * [ ] Extensive data hyperlinking 
@@ -96,11 +96,11 @@ npm run storybook
 * [ ] Extended Filtering and/or Sorting
 * [ ] Storybook support
     * [x] Actors Page
-    * [ ] Tv Shows Page
+    * [x] Tv Shows Page
     * [ ] Tv Show Details
 * [ ] Functionality
   * [ ] Ordered Favourites
-  * [ ] Movie Playlists
+  * [x] Movie Playlists
 * [ ] Pagination
 * [ ] 3rd party authentication e.g. Firebase
 * [ ] Backend persistence - e.g. TMDB Lists, Firebase
