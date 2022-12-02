@@ -37,7 +37,7 @@ const HomePage = (props) => {
         return (
           <>
             <AddToFavouritesIcon movie={movie} />
-            <AddToPlaylist movie={movie} />
+            <AddToPlaylistIcon movie={movie} />
           </>
         );
       }}
