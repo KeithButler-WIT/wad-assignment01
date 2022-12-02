@@ -1,14 +1,14 @@
 import React from "react";
-import { getMovies } from "../api/tmdb-api";
+import { getPopularMovies } from "../api/tmdb-api";
 import PageTemplate from '../components/templateMovieListPage';
 import { useQuery } from 'react-query';
 import Spinner from '../components/spinner';
 import AddToFavouritesIcon from '../components/cardIcons/addToFavourites'
 import AddToPlaylistIcon from '../components/cardIcons/addToPlaylist'
 
-const HomePage = (props) => {
+const PopularMoviesPage = (props) => {
 
-  const {  data, error, isLoading, isError }  = useQuery('discover', getMovies)
+  const {  data, error, isLoading, isError }  = useQuery('popularMovies', getPopularMovies)
 
   if (isLoading) {
     return <Spinner />
@@ -31,18 +31,18 @@ const HomePage = (props) => {
 
   return (
     <PageTemplate
-      title="Discover Movies"
+      title="Popular Movies"
       movies={movies}
       action={(movie) => {
         return (
           <>
             <AddToFavouritesIcon movie={movie} />
-            <AddToPlaylist movie={movie} />
+            <AddToPlaylistIcon movie={movie} />
           </>
         );
       }}
     />
   );
-};
 
-export default HomePage;
+};
+export default PopularMoviesPage;

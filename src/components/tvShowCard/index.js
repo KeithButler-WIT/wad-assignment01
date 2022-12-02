@@ -7,51 +7,52 @@ import CardHeader from "@mui/material/CardHeader";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
 import img from '../../images/film-poster-placeholder.png';
 import { Link } from "react-router-dom";
 import Avatar from '@mui/material/Avatar';
-import { ActorsContext } from "../../contexts/actorsContext";
+import { TvShowsContext } from "../../contexts/tvShowsContext";
 
 
-export default function ActorCard({ actor, action }) {
-  // const { favourites, addToFavourites } = useContext(ActorsContext);
+export default function TvShowCard({ show, action }) {
+  // const { favourites, addToFavourites } = useContext(TvShowsContext);
 
 
-  // if (favourites.find((id) => id === actor.id)) {
-  //   actor.favourite = true;
+  // if (favourites.find((id) => id === show.id)) {
+  //   show.favourite = true;
   // } else {
-  //   actor.favourite = false
+  //   show.favourite = false
   // }
 
   // const handleAddToFavourite = (e) => {
   //   e.preventDefault();
-  //   addToFavourites(actor);
+  //   addToFavourites(show);
   // };
 
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
           /* avatar={ */
-          /*   actor.favourite ? ( */
+          /*   show.favourite ? ( */
           /*     <Avatar sx={{ backgroundColor: 'red' }}> */
-          /*       {action(actor)} */
+          /*       {action(show)} */
           /*     </Avatar> */
-          /*   ): null */
+          /*   ) : null */
           /* } */
           title={
             <Typography variant="h5" component="p">
-              {actor.name}{" "}
+              {show.name}{" "}
             </Typography>
           }
       />
       <CardMedia
         sx={{ height: 500 }}
         image={
-          actor.profile_path
-            ? `https://image.tmdb.org/t/p/w500/${actor.profile_path}`
+          show.poster_path
+            ? `https://image.tmdb.org/t/p/w500/${show.poster_path}`
             : img
         }
       />
@@ -59,11 +60,15 @@ export default function ActorCard({ actor, action }) {
         <Grid container>
           <Grid item xs={6}>
             <Typography variant="h6" component="p">
-              <StarRateIcon fontSize="small" />
-              {"  "}{actor.popularity}{" "}
+              <CalendarIcon fontSize="small" />
+              {show.first_air_date}
             </Typography>
           </Grid>
           <Grid item xs={6}>
+            <Typography variant="h6" component="p">
+              <StarRateIcon fontSize="small" />
+              {"  "}{show.vote_average}{" "}
+            </Typography>
           </Grid>
         </Grid>
       </CardContent>
@@ -71,11 +76,11 @@ export default function ActorCard({ actor, action }) {
         {/* <IconButton aria-label="add to favourites" onClick={handleAddToFavourite}> */}
         {/*   <FavoriteIcon color="primary" fontSize="large" /> */}
         {/* </IconButton> */}
-        {/* <Link to={`/actors/${actor.id}`}> */}
-        {/*   <Button variant="outlined" size="medium" color="primary"> */}
-        {/*     More Info ... */}
-        {/*   </Button> */}
-        {/* </Link> */}
+        <Link to={`/tv/${show.id}`}>
+          <Button variant="outlined" size="medium" color="primary">
+            More Info ...
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

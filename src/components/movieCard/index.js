@@ -59,15 +59,6 @@ export default function MovieCard({ movie, action }) {
               </Avatar>
             ) : null
           }
-          // if (movie.favourite) {
-          //   <Avatar sx={{ backgroundColor: 'red' }}>
-          //     {action(movie)}
-          //   </Avatar>
-          // } else if (movie.playlist) {
-          //   <Avatar sx={{ backgroundColor: 'red' }}>
-          //     {action(movie)}
-          //   </Avatar>
-          // } else null
           title={
             <Typography variant="h5" component="p">
               {movie.title}{" "}
@@ -93,7 +84,7 @@ export default function MovieCard({ movie, action }) {
           <Grid item xs={6}>
             <Typography variant="h6" component="p">
               <StarRateIcon fontSize="small" />
-              {"  "} {movie.vote_average}{" "}
+              {"  "}{movie.vote_average}{" "}
             </Typography>
           </Grid>
         </Grid>
