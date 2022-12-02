@@ -7,8 +7,6 @@ import CardHeader from "@mui/material/CardHeader";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-// import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
-// import CalendarIcon from "@mui/icons-material/CalendarTodayTwoTone";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
@@ -36,14 +34,14 @@ export default function ActorCard({ actor, action }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
-          avatar={
-            actor.favourite ? (
-              <Avatar sx={{ backgroundColor: 'red' }}>
-                {action(actor)}
-              </Avatar>
-            ): null
-          }
-          name={
+          /* avatar={ */
+          /*   actor.favourite ? ( */
+          /*     <Avatar sx={{ backgroundColor: 'red' }}> */
+          /*       {action(actor)} */
+          /*     </Avatar> */
+          /*   ): null */
+          /* } */
+          title={
             <Typography variant="h5" component="p">
               {actor.name}{" "}
             </Typography>
@@ -64,9 +62,6 @@ export default function ActorCard({ actor, action }) {
               <StarRateIcon fontSize="small" />
               {"  "}{actor.popularity}{" "}
             </Typography>
-            {/* <Typography variant="h6" component="p"> */}
-            {/*   {actor.known_for_department} */}
-            {/* </Typography> */}
           </Grid>
           <Grid item xs={6}>
           </Grid>
