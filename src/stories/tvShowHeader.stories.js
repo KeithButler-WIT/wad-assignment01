@@ -12,6 +12,6 @@ export default {
   ],
 };
 
-export const Basic = () => <TvShowHeader tvShow={SampleTvShow} />;
+export const Basic = () => <TvShowHeader show={SampleTvShow} />;
 
 Basic.storyName = "Default";

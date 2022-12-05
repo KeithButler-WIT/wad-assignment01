@@ -6,6 +6,7 @@ import MoviePage from "./pages/movieDetailsPage";
 import TvShowPage from "./pages/tvShowDetailsPage";
 import UpcomingMoviesPage from "./pages/upcomingMoviesPage";
 import FavouriteMoviesPage from "./pages/favouriteMoviesPage";
+import FavouriteActorsPage from "./pages/favouriteActorsPage";
 import MovieReviewPage from "./pages/movieReviewPage";
 import PopularMoviesPage from "./pages/popularMoviesPage";
 import PopularTvShowsPage from "./pages/popularTvShowsPage";
@@ -15,6 +16,8 @@ import SiteHeader from './components/siteHeader';
 import { QueryClientProvider, QueryClient } from "react-query";
 import { ReactQueryDevtools } from 'react-query/devtools';
 import MoviesContextProvider from "./contexts/moviesContext";
+import ActorsContextProvider from "./contexts/actorsContext";
+import TvShowsContextProvider from "./contexts/tvShowsContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage'
 
 
@@ -34,19 +37,24 @@ const App = () => {
       <BrowserRouter>
         <SiteHeader />
         <MoviesContextProvider>
+        <TvShowsContextProvider>
+        <ActorsContextProvider>
           <Routes>
             <Route path="/reviews/form" element={<AddMovieReviewPage/>} />
             <Route exact path="/movies/favourites" element={<FavouriteMoviesPage />} />
             <Route exact path="/movies/upcoming" element={<UpcomingMoviesPage />} />
             <Route exact path="/movies/popular" element={<PopularMoviesPage/>} />
-            <Route exact path="/tv/popular" element={<PopularTvShowsPage/>} />
-            <Route exact path="/actors/popular" element={<PopularActorsPage/>} />
             <Route path="/movies/:id" element={<MoviePage />} />
             <Route path="/reviews/:id" element={ <MovieReviewPage /> } />
+            <Route exact path="/tv/popular" element={<PopularTvShowsPage/>} />
             <Route path="/tv/:id" element={<TvShowPage />} />
+            <Route exact path="/actors/favourites" element={<FavouriteActorsPage/>} />
+            <Route exact path="/actors/popular" element={<PopularActorsPage/>} />
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={ <Navigate to="/" /> } />
           </Routes>
+        </ActorsContextProvider>
+        </TvShowsContextProvider>
         </MoviesContextProvider>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} />
