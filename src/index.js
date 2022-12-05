@@ -48,8 +48,8 @@ const App = () => {
             <Route path="/reviews/:id" element={ <MovieReviewPage /> } />
             <Route exact path="/tv/popular" element={<PopularTvShowsPage/>} />
             <Route path="/tv/:id" element={<TvShowPage />} />
-            <Route exact path="/actors/popular" element={<PopularActorsPage/>} />
             <Route exact path="/actors/favourites" element={<FavouriteActorsPage/>} />
+            <Route exact path="/actors/popular" element={<PopularActorsPage/>} />
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={ <Navigate to="/" /> } />
           </Routes>

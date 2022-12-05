@@ -17,30 +17,30 @@ import { ActorsContext } from "../../contexts/actorsContext";
 
 
 export default function ActorCard({ actor, action }) {
-  // const { favourites, addToFavourites } = useContext(ActorsContext);
+  const { favourites, addToFavourites } = useContext(ActorsContext);
 
 
-  // if (favourites.find((id) => id === actor.id)) {
-  //   actor.favourite = true;
-  // } else {
-  //   actor.favourite = false
-  // }
+  if (favourites.find((id) => id === actor.id)) {
+    actor.favourite = true;
+  } else {
+    actor.favourite = false
+  }
 
-  // const handleAddToFavourite = (e) => {
-  //   e.preventDefault();
-  //   addToFavourites(actor);
-  // };
+  const handleAddToFavourite = (e) => {
+    e.preventDefault();
+    addToFavourites(actor);
+  };
 
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
-          /* avatar={ */
-          /*   actor.favourite ? ( */
-          /*     <Avatar sx={{ backgroundColor: 'red' }}> */
-          /*       {action(actor)} */
-          /*     </Avatar> */
-          /*   ): null */
-          /* } */
+          avatar={
+            actor.favourite ? (
+              <Avatar sx={{ backgroundColor: 'red' }}>
+                {action(actor)}
+              </Avatar>
+            ): null
+          }
           title={
             <Typography variant="h5" component="p">
               {actor.name}{" "}
@@ -68,14 +68,9 @@ export default function ActorCard({ actor, action }) {
         </Grid>
       </CardContent>
       <CardActions disableSpacing>
-        {/* <IconButton aria-label="add to favourites" onClick={handleAddToFavourite}> */}
-        {/*   <FavoriteIcon color="primary" fontSize="large" /> */}
-        {/* </IconButton> */}
-        {/* <Link to={`/actors/${actor.id}`}> */}
-        {/*   <Button variant="outlined" size="medium" color="primary"> */}
-        {/*     More Info ... */}
-        {/*   </Button> */}
-        {/* </Link> */}
+        <IconButton aria-label="add to favourites" onClick={handleAddToFavourite}>
+          <FavoriteIcon color="primary" fontSize="large" />
+        </IconButton>
       </CardActions>
     </Card>
   );
