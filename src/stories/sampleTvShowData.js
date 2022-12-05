@@ -16,6 +16,26 @@ export default {
         name: "US",
       },
     ],
+    genres: [
+      {
+        id: "10765",
+        name: "Sci-Fi & Fantasy",
+      },
+      {
+        id: "9648",
+        name: "Mystery",
+      },
+      {
+        id: "35",
+        name: "Comedy",
+      },
+    ],
+    production_countries: [
+      {
+        iso_3166_1: "US",
+        name: "United States of America",
+      },
+    ],
     original_language: "en",
     original_name: "Wednesday",
     overview: "Wednesday Addams is sent to Nevermore Academy, a bizarre boarding school where she attempts to master her psychic powers, stop a monstrous killing spree of the town citizens, and solve the supernatural mystery that affected her family 25 years ago — all while navigating her new relationships.",

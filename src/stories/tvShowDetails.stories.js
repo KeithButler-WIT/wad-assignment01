@@ -13,6 +13,6 @@ export default {
   ],
 };
 
-export const Basic = () => <TvShowDetails tvShow={SampleTvShow} />;
+export const Basic = () => <TvShowDetails show={SampleTvShow} />;
 
 Basic.storyName = "Default";
