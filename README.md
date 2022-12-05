@@ -8,14 +8,22 @@ A react app that utilizes the [TMDB](https://www.themoviedb.org/) api to view mo
 ## Visuals
 ### Home Page
 ![Home Page](./images/HomePage.png)
+### Favourite Movies Page
+![Favourite Movies Page](./images/FavMoviessPage.png)
 ### Upcoming Movies Page
 ![Upcoming Movies Page](./images/UpcomingMoviesPage.png)
 ### Popular Movies Page
 ![Popular Movies Page](./images/PopularMoviesPage.png)
+### Movies Playlist Page
+![Movies Playlist Page](./images/MoviesPlaylistPage.png)
 ### Popular Tv Shows Page
 ![Popular Tv Shows Page](./images/PopularTvShowsPage.png)
+### Tv Shows Details Page
+![Tv Shows Details Page](./images/TvShowDetailsPage.png)
 ### Actors Page
 ![Actors Page](./images/ActorsPage.png)
+### Favourite Actors Page
+![Favourite Actors Page](./images/FavActorsPage.png)
 
 ## Usage
 To install the dependencies use the command:
