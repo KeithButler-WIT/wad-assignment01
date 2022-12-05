@@ -28,6 +28,7 @@ const FavouriteMoviesPage = () => {
 
   const movies = favouriteMovieQueries.map((q) => {
     q.data.genre_ids = q.data.genres.map(g => g.id);
+    // q.data.genre_ids = q.data.genre_ids.sort();
     return q.data
   });
 
@@ -35,6 +36,8 @@ const FavouriteMoviesPage = () => {
   // const sortedMovies = movies[Symbol.iterator] = function* () {
   //     yield* [...this.entries()].sort((a, b) => a[1] - b[1]);
   // }
+
+  // const sortedMovies = new Map([...movies.entries()].sort(([a], [b]) => String(a).localeCompare(b)));
 
   return (
     <PageTemplate
