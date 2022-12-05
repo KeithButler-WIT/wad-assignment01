@@ -9,7 +9,7 @@ A react app that utilizes the [TMDB](https://www.themoviedb.org/) api to view mo
 ### Home Page
 ![Home Page](./images/HomePage.png)
 ### Favourite Movies Page
-![Favourite Movies Page](./images/FavMoviessPage.png)
+![Favourite Movies Page](./images/FavMoviesPage.png)
 ### Upcoming Movies Page
 ![Upcoming Movies Page](./images/UpcomingMoviesPage.png)
 ### Popular Movies Page
